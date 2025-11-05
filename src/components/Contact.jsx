@@ -21,13 +21,13 @@ export default function Contact() {
             <span className="btn-arrow" aria-hidden>→</span>
           </a>
 
-          <a className="contact-btn mail" href="mailto:contato@senseironin.example" aria-label="Contato via Email">
+          <a className="contact-btn mail" href="mailto:professorronnin@gmail.com" aria-label="Contato via Email">
             <div className="btn-icon-wrapper">
               <span className="icon" aria-hidden>✉️</span>
             </div>
             <div className="btn-content">
               <span className="label">Email</span>
-              <span className="btn-description">contato@senseironin</span>
+              <span className="btn-description">professorronnin@gmail.com</span>
             </div>
             <span className="btn-arrow" aria-hidden>→</span>
           </a>

@@ -1,4 +1,5 @@
 import React from 'react'
+import judoInclusivoImg from '../assets/judoinclusivo.jpeg'
 
 export default function Hero() {
   return (
@@ -7,7 +8,8 @@ export default function Hero() {
       <div className="container">
         <div className="hero-inner">
           <div className="hero-text">
-            <h1>Sensei Ronin: O Caminho da Disciplina e do Autocontrole.</h1>
+            <h1>Dojô Ronin</h1>
+            <h1>O Caminho da Disciplina e do Autocontrole.</h1>
             <p className="lead">Aulas de Judô, Defesa Pessoal e Autocontrole — para quem busca força e técnica.</p>
             <div className="hero-cta">
               <a className="btn primary" href="#contact">Comece Agora</a>
@@ -27,9 +29,9 @@ export default function Hero() {
               <div className="card-text">Defesa Pessoal</div>
             </article>
             <article className="card card-3">
-              <img src="https://www.reporterguaibense.com.br/uploads/images/2020/06/autocontrole-e-sensacao-de-bem-estar-com-as-artes-marciais.jpg" alt="Aula 3" />
+              <img src={judoInclusivoImg} alt="Judô inclusivo" />
               <div className="card-overlay"></div>
-              <div className="card-text">Treino de Autocontrole</div>
+              <div className="card-text">Judô inclusivo</div>
             </article>
           </div>
         </div>

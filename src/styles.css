@@ -179,7 +179,7 @@ body{
     padding:80px 24px 24px;
     gap:0;
     transition:right 0.3s ease;
-    box-shadow:-4px 0 24px rgba(0,0,0,0.3);
+    box-shadow:-4px 0 24px rgba(0,0,0,0.2);
     z-index:100;
     overflow-y:auto;
   }
@@ -216,7 +216,7 @@ body{
 .hero{
   position:relative;
   color:var(--white);
-  padding:48px 0;
+  padding:2vh 0;
   min-height:600px;
   display:flex;
   align-items:center;
@@ -358,8 +358,12 @@ body{
   height:220px;
   display:block;
   object-fit:cover;
-  filter:brightness(0.7);
+  filter:brightness(0.9);
   transition:filter 0.3s ease, transform 0.3s ease;
+}
+
+.card-3 img{
+  height:400px;
 }
 
 .card:hover img{
@@ -379,7 +383,7 @@ body{
 
 .card-text{
   position:absolute;
-  left:16px;
+  right:16px;
   bottom:16px;
   color:var(--white);
   font-weight:700;
@@ -397,7 +401,7 @@ body{
   position:relative;
   background:linear-gradient(180deg, #fffef7 0%, #fff9e6 100%);
   color:var(--text-dark);
-  padding:48px 0;
+  padding:2vh 0;
   overflow:hidden;
 }
 
@@ -549,7 +553,7 @@ body{
 /* Profile */
 .profile{
   background:var(--white);
-  padding:48px 0;
+  padding:2vh 0;
 }
 
 .profile-header{
@@ -683,7 +687,7 @@ body{
 /* Contact */
 .contact{
   background:linear-gradient(180deg, #f9fafb 0%, var(--white) 100%);
-  padding:48px 0;
+  padding:2vh 0;
 }
 
 .contact-header{
@@ -832,7 +836,7 @@ body{
 /* Location */
 .location{
   background:var(--white);
-  padding:48px 0;
+  padding:2vh 0;
 }
 
 .location-header{
@@ -937,7 +941,7 @@ body{
 
   .hero{
     min-height:700px;
-    padding:64px 0;
+    padding:2vh 0;
   }
 
   .hero-inner{
@@ -988,11 +992,17 @@ body{
 
   .card-3{
     grid-column:2;
+    grid-row:1/span 2;
   }
 
   .card img{
     height:280px;
     object-fit:cover;
+  }
+
+  .card-3 img{
+    height:100%;
+    min-height:560px;
   }
 
   .inclusive-header h2,
