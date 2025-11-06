@@ -19,7 +19,7 @@ body{
   background:var(--white);
   -webkit-font-smoothing:antialiased;
 }
-.container{max-width:1100px;margin:0 auto;padding:24px}
+.container{max-width:1100px;margin:0 auto;padding:20px}
 
 /* Header */
 .site-header{
@@ -259,13 +259,14 @@ body{
 
 .hero-inner{
   display:flex;
-  flex-direction:column;
-  gap:32px;
+  flex-direction:row;
+  gap:16px;
 }
 
 .hero-text{
   padding:0;
   text-align:center;
+  margin-bottom:24px;
 }
 
 .hero-text h1{
@@ -333,10 +334,19 @@ body{
 }
 
 .hero-cards{
-  display:grid;
+  display:flex;
+  flex-direction: column;
   grid-template-columns:1fr;
   gap:16px;
   margin-top:8px;
+}
+
+.hero-card-horizontal{
+  margin-top:16px;
+}
+
+.hero-card-vertical{
+  margin-top:16px;
 }
 
 .card{
@@ -945,14 +955,16 @@ body{
   }
 
   .hero-inner{
+    display:flex;
     flex-direction:row;
     align-items:stretch;
+    justify-content:center;
     gap:40px;
   }
 
   .hero-text{
     flex:1;
-    padding:24px;
+    padding:20px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -971,28 +983,36 @@ body{
   }
 
   .hero-cta{
-    justify-content:flex-start;
+    justify-content:center;
   }
 
   .hero-cards{
-    flex:1;
+    flex:0 1 auto;
+    max-width:600px;
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
     gap:16px;
   }
 
   .card-1{
-    grid-column:1/span 2;
-  }
-
-  .card-2{
     grid-column:1;
   }
 
-  .card-3{
+  .card-2{
     grid-column:2;
-    grid-row:1/span 2;
+  }
+
+  .hero-card-vertical{
+    flex:0 0 auto;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .card-3{
+    height:100%;
+    display:flex;
+    flex-direction:column;
   }
 
   .card img{
@@ -1002,6 +1022,7 @@ body{
 
   .card-3 img{
     height:100%;
+    flex:1;
     min-height:560px;
   }
 
