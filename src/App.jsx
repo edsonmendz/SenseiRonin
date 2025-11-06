@@ -7,13 +7,23 @@ import Contact from './components/Contact'
 import Location from './components/Location'
 
 export default function App() {
-  // Scroll to hash on route changes (works with anchor links)
+  // Handle smooth scroll for anchor links
   useEffect(() => {
-    if (window.location.hash) {
-      const id = window.location.hash.replace('#', '')
-      const el = document.getElementById(id)
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    const handleAnchorClick = (e) => {
+      const { target } = e
+      if (target.tagName.toLowerCase() === 'a' && target.hash) {
+        e.preventDefault()
+        const element = document.querySelector(target.hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+          // Update URL without causing page jump
+          window.history.pushState(null, '', target.hash)
+        }
+      }
     }
+
+    document.addEventListener('click', handleAnchorClick)
+    return () => document.removeEventListener('click', handleAnchorClick)
   }, [])
 
   return (
