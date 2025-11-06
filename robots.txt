@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://sensei-ronin.vercel.app/sitemap.xml
+# Crawl-delay: 10   # uncomment if you need to throttle crawlers
