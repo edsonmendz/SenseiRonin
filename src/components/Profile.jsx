@@ -14,7 +14,7 @@ export default function Profile() {
           <div className="profile-img">
             <div className="profile-img-wrapper">
               <img src={senseiPerfil} alt="Sensei Ronin" />
-              <div className="profile-badge">Faixa Preta 2º Dan</div>
+              {/*<div className="profile-badge">Faixa Preta 2º Dan</div>*/}
             </div>
           </div>
           

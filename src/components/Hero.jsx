@@ -6,8 +6,7 @@ export default function Hero() {
     <div className="hero">
       <div className="hero-background"></div>
       <div className="container">
-        <div className="hero-inner">
-          <div className="hero-text">
+        <div className="hero-text">
             <h1>Dojô Ronin</h1>
             <h1>O Caminho da Disciplina e do Autocontrole.</h1>
             <p className="lead">Aulas de Judô, Defesa Pessoal e Autocontrole — para quem busca força e técnica.</p>
@@ -15,7 +14,7 @@ export default function Hero() {
               <a className="btn primary" href="#contact">Comece Agora</a>
               <a className="btn ghost" href="#profile">Conheça o Sensei</a>
             </div>
-          </div>
+          </div>    
           <div className="hero-cards">
             <div className="hero-card-horizontal">
               <article className="card card-1">
@@ -36,8 +35,7 @@ export default function Hero() {
                 <div className="card-text">Judô inclusivo</div>
               </article>
             </div>
-          </div>   
-        </div>
+          </div>
       </div>
     </div>
   )
