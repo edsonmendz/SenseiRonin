@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import senseiRoninLogo from '../assets/sensei-ronin-logo.png'
+import { useState, useEffect } from 'react'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -47,7 +46,7 @@ export default function Header() {
       <div className="header-inner">
         <a className="logo" href="#hero" onClick={closeMenu}>
           <img 
-            src={senseiRoninLogo}
+            src="sensei-ronin-logo.png"
             alt="Sensei Ronin Logo - Jiu Jitsu Ronin Judo Dojo" 
             loading="eager"
             decoding="async"
