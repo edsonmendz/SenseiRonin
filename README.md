@@ -1,43 +1,31 @@
-# Sensei Ronin — SPA (React + Vite)
+# Sensei Ronin - Custom React Portfolio 🥋
 
-Projeto inicial do website institucional do Sensei Ronin.
+This is a real-world freelance project developed for a Martial Arts professional who needed to break free from the "rigid" structures of social media platforms like Instagram.
 
-Características:
-- React SPA (Vite)
-- Mobile-first, responsivo
-- Sticky header com navegação suave (smooth scrolling)
-- Distinção visual entre Seção 1 (Preto/Vermelho) e demais seções (Branco/Cores Suaves)
+## 🚀 Live Demo
+Check out the live website here: 
+👉 **[sensei-ronin.vercel.app](https://sensei-ronin.vercel.app/)**
 
-Instalação e execução (PowerShell no Windows):
+---
 
-```powershell
-npm install
-npm run dev
-```
+## 📸 Preview
+![Project Screenshot](screenshot.png)
 
-Observações:
-- Substitua `[Link da Imagem da Logo]` na `src/components/Header.jsx` pelo URL real da logo.
-- Atualize links de contato no `src/components/Contact.jsx` quando fornecidos.
-- O mapa está embutido via iframe conforme solicitado; ajuste se necessário.
+---
 
-Próximos passos sugeridos:
-- Ajustar imagens reais e logo.
-- Testes de acessibilidade e contraste adicional.
-- Adicionar animações sutis e SEO/meta tags conforme o ambiente de deploy.
+## 💼 The Solution: Beyond Social Media
+The client’s pain point was the lack of a truly personalized online identity. I developed a custom **React** application that allows for a unique storytelling experience, reflecting the Sensei's philosophy in a way that standard platforms cannot.
 
-SEO & Indexação (passos aplicados aqui)
-- Adicionei meta tags principais e JSON-LD em `index.html` (title, description, Open Graph, Twitter card, canonical).
-- Implementei atualização dinâmica de `document.title` e `meta[name=description]` em `src/App.jsx` usando IntersectionObserver — assim cada seção atualiza título/descrição quando fica visível (útil para motores de busca que executam JS, como Google).
-- Criei `robots.txt` e `sitemap.xml` na raiz com entradas iniciais para as seções (substitua `https://example.com` pela URL final).
+## 🛠 Tech Stack
+- **Frontend Framework:** React.js
+- **Development Strategy:** **Mobile-First Approach**, ensuring a seamless experience on smartphones before scaling to desktop.
+- **Styling:** Custom CSS/Modules for a unique visual identity.
+- **Deployment:** Hosted on **Vercel**.
 
-Recomendações adicionais (altamente recomendado):
-1) Prerender / SSR: para máxima indexabilidade e performance, prefira migrar para uma solução com renderização no servidor (Next.js) ou usar uma etapa de prerender (ex.: `vite-plugin-prerender` ou serviços como Render/Netlify prerender). Posso ajudar a migrar ou configurar prerendering.
-2) Google Search Console: registre e envie o `sitemap.xml` e monitore cobertura/indexação e problemas de rastreabilidade.
-3) Metatags por rota: se você migrar para SSR/SSG, crie metatags específicas por rota/URL para cada seção para melhor resultado em SERPs.
-4) Imagens e Open Graph: substitua `og-image.png` e imagens placeholders por recursos reais com 1200x630 para melhor compartilhamento social.
+## 🚀 Key Features
+- **Tailored UI/UX:** A non-linear, custom layout designed specifically for the client's brand.
+- **High Performance:** Optimized React components for fast loading and smooth navigation.
+- **Full Responsiveness:** Optimized for all screen sizes with a focus on mobile users.
 
-Como testar rapidamente:
-1. Substitua `https://example.com` pelo domínio real (ex.: `https://sensei-ronin.vercel.app/`) — já atualizei os arquivos para `https://sensei-ronin.vercel.app/`.
-2. Submeta `sitemap.xml` no Google Search Console.
-3. Use o Mobile-Friendly test e o URL Inspection no Search Console.
-4. Verifique o carregamento de meta tags dinâmicas abrindo o site, navegando entre seções e observando a `document.title` e `meta[name=description]` no DevTools.
+---
+*Note: This was a paid freelance project where I managed the entire lifecycle, from gathering requirements to final delivery and client satisfaction.*
