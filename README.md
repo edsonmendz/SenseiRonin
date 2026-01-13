@@ -9,8 +9,10 @@ Check out the live website here:
 ---
 
 ## 📸 Preview
-![Project Screenshot](screenshot.png)
 
+| Desktop Version | Mobile Version |
+| :---: | :---: |
+| ![Desktop Screenshot](desktop.png) | ![Mobile Screenshot](mobile.png) |
 ---
 
 ## 💼 The Solution: Beyond Social Media
